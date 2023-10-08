@@ -6,6 +6,9 @@ use App\Models\Zone;
 use App\Http\Controllers\Controller;
 use App\Http\Resources\ZoneResource;
 
+/**
+ * @group Zones
+ */
 class ZoneController extends Controller
 {
     public function index()

@@ -28,7 +28,7 @@ endpoints:
         name: name
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: fqkblopctrtmuqtqlla
+        example: vwniqzhmwf
         type: string
         enumValues: []
         custom: []
@@ -36,7 +36,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: vparisian@example.com
+        example: waelchi.joaquin@example.net
         type: string
         enumValues: []
         custom: []
@@ -44,14 +44,14 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: at
+        example: modi
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      name: fqkblopctrtmuqtqlla
-      email: vparisian@example.com
-      password: at
+      name: vwniqzhmwf
+      email: waelchi.joaquin@example.net
+      password: modi
     fileParameters: []
     responses: []
     responseFields: []
@@ -85,7 +85,7 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: talia06@example.net
+        example: ikuhic@example.com
         type: string
         enumValues: []
         custom: []
@@ -93,13 +93,13 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: aspernatur
+        example: earum
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      email: talia06@example.net
-      password: aspernatur
+      email: ikuhic@example.com
+      password: earum
     fileParameters: []
     responses: []
     responseFields: []
@@ -172,7 +172,7 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: vel
+        example: explicabo
         type: string
         enumValues: []
         custom: []
@@ -180,13 +180,13 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: grant.jackson@example.net
+        example: inader@example.net
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      name: vel
-      email: grant.jackson@example.net
+      name: explicabo
+      email: inader@example.net
     fileParameters: []
     responses: []
     responseFields: []
@@ -220,7 +220,7 @@ endpoints:
         name: current_password
         description: ''
         required: true
-        example: sint
+        example: facere
         type: string
         enumValues: []
         custom: []
@@ -228,13 +228,13 @@ endpoints:
         name: password
         description: ''
         required: true
-        example: cupiditate
+        example: non
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      current_password: sint
-      password: cupiditate
+      current_password: facere
+      password: non
     fileParameters: []
     responses: []
     responseFields: []

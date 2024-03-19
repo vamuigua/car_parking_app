@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Car_Parking_Backend
+  title: 'Car Parking Backend'
   description: ''
   version: 1.0.0
 servers:
@@ -26,15 +26,15 @@ paths:
                 name:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: fqkblopctrtmuqtqlla
+                  example: vwniqzhmwf
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: vparisian@example.com
+                  example: waelchi.joaquin@example.net
                 password:
                   type: string
                   description: ''
-                  example: at
+                  example: modi
               required:
                 - name
                 - email
@@ -59,11 +59,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: talia06@example.net
+                  example: ikuhic@example.com
                 password:
                   type: string
                   description: ''
-                  example: aspernatur
+                  example: earum
               required:
                 - email
                 - password
@@ -108,11 +108,11 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: vel
+                  example: explicabo
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: grant.jackson@example.net
+                  example: inader@example.net
               required:
                 - name
                 - email
@@ -136,11 +136,11 @@ paths:
                 current_password:
                   type: string
                   description: ''
-                  example: sint
+                  example: facere
                 password:
                   type: string
                   description: ''
-                  example: cupiditate
+                  example: non
               required:
                 - current_password
                 - password
@@ -174,11 +174,11 @@ paths:
                 vehicle_id:
                   type: integer
                   description: ''
-                  example: 7
+                  example: 14
                 zone_id:
                   type: integer
                   description: ''
-                  example: 10
+                  example: 8
               required:
                 - vehicle_id
                 - zone_id
@@ -219,7 +219,7 @@ paths:
         in: path
         name: parking_id
         description: 'The ID of the parking.'
-        example: 18
+        example: 14
         required: true
         schema:
           type: integer
@@ -263,7 +263,7 @@ paths:
                 plate_number:
                   type: string
                   description: ''
-                  example: perferendis
+                  example: ut
               required:
                 - plate_number
       security: []
@@ -307,7 +307,7 @@ paths:
                 plate_number:
                   type: string
                   description: ''
-                  example: enim
+                  example: deleniti
               required:
                 - plate_number
       security: []
@@ -325,7 +325,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the vehicle.'
-        example: 2
+        example: 14
         required: true
         schema:
           type: integer

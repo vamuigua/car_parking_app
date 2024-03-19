@@ -67,12 +67,12 @@ endpoints:
         name: plate_number
         description: ''
         required: true
-        example: perferendis
+        example: ut
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      plate_number: perferendis
+      plate_number: ut
     fileParameters: []
     responses: []
     responseFields: []
@@ -102,12 +102,12 @@ endpoints:
         name: id
         description: 'The ID of the vehicle.'
         required: true
-        example: 2
+        example: 14
         type: integer
         enumValues: []
         custom: []
     cleanUrlParameters:
-      id: 2
+      id: 14
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -151,12 +151,12 @@ endpoints:
         name: id
         description: 'The ID of the vehicle.'
         required: true
-        example: 1
+        example: 2
         type: integer
         enumValues: []
         custom: []
     cleanUrlParameters:
-      id: 1
+      id: 2
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -164,12 +164,12 @@ endpoints:
         name: plate_number
         description: ''
         required: true
-        example: enim
+        example: deleniti
         type: string
         enumValues: []
         custom: []
     cleanBodyParameters:
-      plate_number: enim
+      plate_number: deleniti
     fileParameters: []
     responses: []
     responseFields: []
@@ -199,12 +199,12 @@ endpoints:
         name: id
         description: 'The ID of the vehicle.'
         required: true
-        example: 18
+        example: 5
         type: integer
         enumValues: []
         custom: []
     cleanUrlParameters:
-      id: 18
+      id: 5
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []

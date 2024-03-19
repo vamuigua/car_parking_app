@@ -9,8 +9,8 @@
         }
     ],
     "info": {
-        "name": "Car_Parking_Backend",
-        "_postman_id": "858e5cec-5daf-4788-929d-cf4e752ff1a4",
+        "name": "Car Parking Backend",
+        "_postman_id": "c326f173-2543-4e48-bf8b-8e104ad63754",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"fqkblopctrtmuqtqlla\",\"email\":\"vparisian@example.com\",\"password\":\"at\"}"
+                            "raw": "{\"name\":\"vwniqzhmwf\",\"email\":\"waelchi.joaquin@example.net\",\"password\":\"modi\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"talia06@example.net\",\"password\":\"aspernatur\"}"
+                            "raw": "{\"email\":\"ikuhic@example.com\",\"password\":\"earum\"}"
                         },
                         "description": "",
                         "auth": {
@@ -151,7 +151,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"vel\",\"email\":\"grant.jackson@example.net\"}"
+                            "raw": "{\"name\":\"explicabo\",\"email\":\"inader@example.net\"}"
                         },
                         "description": "",
                         "auth": {
@@ -182,7 +182,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"current_password\":\"sint\",\"password\":\"cupiditate\"}"
+                            "raw": "{\"current_password\":\"facere\",\"password\":\"non\"}"
                         },
                         "description": "",
                         "auth": {
@@ -253,7 +253,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"vehicle_id\":7,\"zone_id\":10}"
+                            "raw": "{\"vehicle_id\":14,\"zone_id\":8}"
                         },
                         "description": "",
                         "auth": {
@@ -274,7 +274,7 @@
                                 {
                                     "id": "parking_id",
                                     "key": "parking_id",
-                                    "value": "18",
+                                    "value": "14",
                                     "description": "The ID of the parking."
                                 }
                             ]
@@ -330,7 +330,7 @@
                                 {
                                     "id": "parking_id",
                                     "key": "parking_id",
-                                    "value": "6",
+                                    "value": "19",
                                     "description": "The ID of the parking."
                                 }
                             ]
@@ -430,7 +430,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"plate_number\":\"perferendis\"}"
+                            "raw": "{\"plate_number\":\"ut\"}"
                         },
                         "description": "",
                         "auth": {
@@ -451,7 +451,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "2",
+                                    "value": "14",
                                     "description": "The ID of the vehicle."
                                 }
                             ]
@@ -507,7 +507,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "1",
+                                    "value": "2",
                                     "description": "The ID of the vehicle."
                                 }
                             ]
@@ -525,7 +525,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"plate_number\":\"enim\"}"
+                            "raw": "{\"plate_number\":\"deleniti\"}"
                         },
                         "description": "",
                         "auth": {
@@ -546,7 +546,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "18",
+                                    "value": "5",
                                     "description": "The ID of the vehicle."
                                 }
                             ]

@@ -3,5 +3,9 @@
         "activityBar.background": "#4F2005",
         "titleBar.activeBackground": "#6E2D07",
         "titleBar.activeForeground": "#FFFBF9"
+    },
+    
+    "files.associations": {
+        "*.css": "tailwindcss"
     }
 }

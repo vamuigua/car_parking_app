@@ -19,7 +19,7 @@ export const useAuth = defineStore('auth', () => {
     router.push({ name: 'vehicles.index' })
   }
 
-  function destroyTokenAndRedirectTo(routeName) {
+  function destroyTokenAndRedirectTo(routeName = 'login') {
     setAccessToken(null)
     router.push({ name: routeName })
   }

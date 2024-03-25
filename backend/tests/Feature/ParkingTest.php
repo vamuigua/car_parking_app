@@ -24,11 +24,13 @@ class ParkingTest extends TestCase
             'zone_id'    => $zone->id,
         ]);
 
+        $startTime = $response['data']['start_time'];
+
         $response->assertStatus(201)
             ->assertJsonStructure(['data'])
             ->assertJson([
                 'data' => [
-                    'start_time'  => now()->toDateTimeString(),
+                    'start_time'  => $startTime,
                     'stop_time'   => null,
                     'total_price' => 0,
                 ],

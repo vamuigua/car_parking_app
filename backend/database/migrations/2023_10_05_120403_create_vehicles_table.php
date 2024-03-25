@@ -16,6 +16,7 @@ return new class extends Migration
 
             $table->foreignId('user_id')->constrained();
             $table->string('plate_number');
+            $table->string('description')->nullable();
 
             $table->timestamps();
             $table->softDeletes();

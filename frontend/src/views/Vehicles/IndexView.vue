@@ -8,6 +8,6 @@
 
     <div class="border-t h-[1px] my-6"></div>
 
-    <div>There will be our vehicles list.</div>
+    <div>No vehicles found. Start by clicking on the "Add Vehicle" button</div>
   </div>
 </template>

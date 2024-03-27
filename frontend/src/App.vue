@@ -12,12 +12,16 @@ const auth = useAuth()
         <div class="flex gap-4 items-center">
           <h2 class="text-xl font-bold">
             <div
-              class="inline-flex items-center justify-center bg-blue-600 w-6 h-6 text-center text-white rounded">
+              class="inline-flex items-center justify-center bg-blue-600 w-6 h-6 text-center text-white rounded"
+            >
               P
             </div>
             myParking
           </h2>
           <template v-if="auth.check">
+            <RouterLink class="router-link" :to="{ name: 'parkings.active' }">
+              Parkings
+            </RouterLink>
             <RouterLink class="router-link" :to="{ name: 'vehicles.index' }"> Vehicles </RouterLink>
           </template>
           <template v-else>

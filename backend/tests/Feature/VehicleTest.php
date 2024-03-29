@@ -38,18 +38,21 @@ class VehicleTest extends TestCase
 
         $response = $this->actingAs($user)->postJson('/api/v1/vehicles', [
             'plate_number' => 'AAA111',
+            'description' => 'John\'s car',
         ]);
 
         $response->assertStatus(201)
             ->assertJsonStructure(['data'])
-            ->assertJsonCount(2, 'data')
+            ->assertJsonCount(3, 'data')
             ->assertJsonStructure([
-                'data' => ['0' => 'plate_number'],
+                'data' => ['0' => 'plate_number', '1' => 'description'],
             ])
-            ->assertJsonPath('data.plate_number', 'AAA111');
+            ->assertJsonPath('data.plate_number', 'AAA111')
+            ->assertJsonPath('data.description', 'John\'s car');
 
         $this->assertDatabaseHas('vehicles', [
             'plate_number' => 'AAA111',
+            'description' => 'John\'s car',
         ]);
     }
 

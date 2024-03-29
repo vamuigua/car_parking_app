@@ -13,10 +13,11 @@ export const useAuth = defineStore('auth', () => {
     window.axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken.value}`
   }
 
-  function login(accessToken) {
+  function login(accessToken, origin = 'login') {
     setAccessToken(accessToken)
 
-    router.push({ name: 'vehicles.index' })
+    if (origin === 'login') return router.push({ name: 'parkings.active' })
+    if (origin === 'register') return router.push({ name: 'vehicles.index' })
   }
 
   function destroyTokenAndRedirectTo(routeName = 'login') {
@@ -26,7 +27,7 @@ export const useAuth = defineStore('auth', () => {
 
   async function logout() {
     return window.axios.post('auth/logout').finally(() => {
-      destroyTokenAndRedirectTo('register')
+      destroyTokenAndRedirectTo()
     })
   }
 

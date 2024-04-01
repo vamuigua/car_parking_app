@@ -5,23 +5,22 @@ import { useRouter } from 'vue-router'
 
 export const useAuth = defineStore('auth', () => {
   const router = useRouter()
-  const accessToken = useStorage('access_token', '')
-  const check = computed(() => !!accessToken.value)
+  const isAuthenticated = useStorage('isAuthenticated', false)
+  const check = computed(() => isAuthenticated.value)
 
-  function setAccessToken(value) {
-    accessToken.value = value
-    window.axios.defaults.headers.common['Authorization'] = `Bearer ${accessToken.value}`
+  function setAuthStatus(authStatus) {
+    isAuthenticated.value = authStatus
   }
 
-  function login(accessToken, origin = 'login') {
-    setAccessToken(accessToken)
+  function login(origin = 'login') {
+    setAuthStatus(true)
 
     if (origin === 'login') return router.push({ name: 'parkings.active' })
     if (origin === 'register') return router.push({ name: 'vehicles.index' })
   }
 
   function destroyTokenAndRedirectTo(routeName = 'login') {
-    setAccessToken(null)
+    setAuthStatus(false)
     router.push({ name: routeName })
   }
 
@@ -31,5 +30,5 @@ export const useAuth = defineStore('auth', () => {
     })
   }
 
-  return { login, logout, check, destroyTokenAndRedirectTo }
+  return { login, logout, check, destroyTokenAndRedirectTo, isAuthenticated }
 })

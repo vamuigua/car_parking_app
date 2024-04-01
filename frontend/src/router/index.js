@@ -1,20 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
-function auth(to, from, next) {
-  if (!localStorage.getItem('access_token')) {
-    return next({ name: 'login' })
-  }
-
-  next()
-}
-
-function guest(to, from, next) {
-  if (localStorage.getItem('access_token')) {
-    return next({ name: 'parkings.active' })
-  }
-
-  next()
-}
+import { useAuth } from '@/stores/auth'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -92,5 +77,23 @@ const router = createRouter({
     }
   ]
 })
+
+function auth(to, from, next) {
+  const authStore = useAuth()
+  if (!authStore.isAuthenticated) {
+    return next({ name: 'login' })
+  }
+
+  next()
+}
+
+function guest(to, from, next) {
+  const authStore = useAuth()
+  if (authStore.isAuthenticated) {
+    return next({ name: 'parkings.active' })
+  }
+
+  next()
+}
 
 export default router

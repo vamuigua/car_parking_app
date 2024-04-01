@@ -7,8 +7,8 @@ export const useLogin = defineStore('login', () => {
   const errors = reactive({})
   const loading = ref(false)
   const form = reactive({
-    email: '',
-    password: '',
+    email: 'javazaq@mailinator.com',
+    password: 'password',
     remember: false
   })
 
@@ -26,13 +26,13 @@ export const useLogin = defineStore('login', () => {
     loading.value = true
     errors.value = {}
 
-    return window.axios
+    await window.axios
       .post('auth/login', form)
-      .then((response) => {
-        auth.login(response.data.access_token)
+      .then(() => {
+        auth.login()
       })
       .catch((error) => {
-        if (error.response.status === 422) {
+        if (error.response?.status === 422) {
           errors.value = error.response.data.errors
         }
       })

@@ -4,6 +4,7 @@ import { useAuth } from '@/stores/auth'
 const axios = Axios.create({
   baseURL: 'http://localhost:8000/api/v1',
   withCredentials: true,
+  withXSRFToken: true,
   headers: {
     Accept: 'application/json',
     common: {
@@ -22,10 +23,10 @@ axios.interceptors.request.use(async (req) => {
   if (!xsrfToken) {
     await window.axios.get('http://localhost:8000/sanctum/csrf-cookie')
 
-    xsrfToken = getBrowserCookieValue('XSRF-TOKEN')
+    // xsrfToken = getBrowserCookieValue('XSRF-TOKEN')
   }
 
-  req.headers['X-XSRF-TOKEN'] = xsrfToken
+  // req.headers['X-XSRF-TOKEN'] = xsrfToken
 
   return req
 })

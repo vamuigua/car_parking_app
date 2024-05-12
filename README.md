@@ -42,7 +42,7 @@ From here you will see two folders: `backend` and `frontend` .The `backend` is t
 
 We shall first install and configure the `backend` then afterwards the `frontend`:
 
-### Backend Configuration (Laravel App)
+### 1. Backend Configuration (Laravel App)
 Go to the `backend` directory
 
 ```bash
@@ -101,7 +101,7 @@ The `backend` app will be served on URL http://localhost:8000/
 
 Now we can move to configuring the `frontend`
 
-### Frontend Configuration (Vue JS App)
+### 2. Frontend Configuration (Vue JS App)
 Go to the `frontend` directory
 
 ```bash

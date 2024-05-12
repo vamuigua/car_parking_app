@@ -158,7 +158,7 @@ Some of the APIs you can find include:
 
 | Authorization | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `Bearner Token`      | `string` | **Required**. |
+| `Bearer Token`      | `string` | **Required**. |
 
 #### Login as a User
 

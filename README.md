@@ -40,7 +40,7 @@ Go to the project directory
 ## 📐Setting app the different apps
 From here you will see two folders: `backend` and `frontend` .The `backend` is the laravel app that servers the APIs to the`frontend` which is a Vue JS application.
 
-We shall first install and configure the `backend` then afterwards the `frontend`:
+We shall first install and configure the [backend](https://github.com/vamuigua/car_parking_app?tab=readme-ov-file#1-backend-configuration-laravel-app) then afterwards the [frontend](https://github.com/vamuigua/car_parking_app?tab=readme-ov-file#2-frontend-configuration-vue-js-app):
 
 ### 1. Backend Configuration (Laravel App)
 Go to the `backend` directory

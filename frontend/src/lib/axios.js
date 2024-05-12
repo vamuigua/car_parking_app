@@ -1,8 +1,10 @@
 import Axios from 'axios'
 import { useAuth } from '@/stores/auth'
 
+const apiUrl = import.meta.env.VITE_CAR_PARKING_BACKEND_API
+
 const axios = Axios.create({
-  baseURL: 'http://localhost:8000/api/v1',
+  baseURL: `${apiUrl}/api/v1`,
   withCredentials: true,
   withXSRFToken: true,
   headers: {
@@ -21,12 +23,8 @@ axios.interceptors.request.use(async (req) => {
   let xsrfToken = getBrowserCookieValue('XSRF-TOKEN')
 
   if (!xsrfToken) {
-    await window.axios.get('http://localhost:8000/sanctum/csrf-cookie')
-
-    // xsrfToken = getBrowserCookieValue('XSRF-TOKEN')
+    await window.axios.get(`${apiUrl}/sanctum/csrf-cookie`)
   }
-
-  // req.headers['X-XSRF-TOKEN'] = xsrfToken
 
   return req
 })

@@ -56,7 +56,7 @@ onBeforeUnmount(parkingStore.resetForm)
         >
           <option v-for="zone in zoneStore.zones" :value="zone.id" :key="zone.id">
             {{ zone.name }}
-            ({{ (zone.price_per_hour / 100).toFixed(2) }} &euro;/h)
+            ({{ (zone.price_per_hour / 100).toFixed(2) }} USD/h)
           </option>
         </select>
         <ValidationError :errors="parkingStore.errors" field="zone_id" />

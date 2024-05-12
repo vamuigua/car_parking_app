@@ -35,7 +35,7 @@ onBeforeUnmount(() => clearInterval(interval))
         </div>
         <div class="bg-gray-100 p-2">
           {{ parking.zone.name }}
-          ({{ (parking.zone.price_per_hour / 100).toFixed(2) }} &euro;/h)
+          ({{ (parking.zone.price_per_hour / 100).toFixed(2) }} USD/h)
         </div>
         <div>
           <div class="font-bold uppercase">from</div>
@@ -45,7 +45,7 @@ onBeforeUnmount(() => clearInterval(interval))
           <span class="text-2xl font-bold text-blue-600">{{
             (parking.total_price / 100).toFixed(2)
           }}</span>
-          <span class="pt-0.5">&nbsp;&euro;</span>
+          <span class="pt-0.5">&nbsp;USD</span>
         </div>
         <button
           type="button"

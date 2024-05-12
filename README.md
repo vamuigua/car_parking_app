@@ -85,7 +85,7 @@ Generate an Application Key
 
 Migrate the Database
 
-*PS: Ensure you have created a database of your choose before hand e.g `car_packing_app`*
+*PS: Ensure you have created a database e.g `car_packing_app` before running the migrate command*
 
 ```bash
   php artisan migrate
@@ -97,7 +97,7 @@ Start the app by running the server
   php artisan serve
 ```
 
-The `backend` app will be served on URL http://localhost:8000/
+The `backend` app will be served on the URL http://localhost:8000/
 
 Now we can move to configuring the `frontend`
 
@@ -120,13 +120,13 @@ Create an `.env` file
   touch .env
 ```
 
-Update the following environment variable in the `.env` file:
+Add the following environment variable in the `.env` file:
 
 ```
 VITE_CAR_PARKING_BACKEND_API=http://localhost:8000
 ```
 
-*E.g http://localhost:8000 is the URL serving the laravel application.*
+*http://localhost:8000 is the URL serving the laravel application.*
 
 Start the app server
 
@@ -134,7 +134,7 @@ Start the app server
   npm run dev
 ```
 
-The `frontend` app will be served on URL http://localhost:5173/
+The `frontend` app will be served on the URL http://localhost:5173/
 
 ✅ **Start using myParking app:** Once the app is running, you can start by creating an account by visiting the [registration page](http://localhost:5173/register) and explore the app's features.
 
@@ -150,16 +150,6 @@ Some of the APIs you can find include:
   GET api/v1/zones
 ```
 
-#### Get an authenticated user's profile
-
-```http
-  GET api/v1/profile
-```
-
-| Authorization | Type     | Description                       |
-| :-------- | :------- | :-------------------------------- |
-| `Bearer Token`      | `string` | **Required**. |
-
 #### Login as a User
 
 ```http
@@ -171,6 +161,17 @@ Some of the APIs you can find include:
 | `email`      | `email` | **Required**. |
 | `password`      | `string` | **Required**. |
 | `remember`      | `bool` | Determines whether the Token will expire at a defined time or not. |
+
+#### Get an authenticated user's profile
+
+```http
+  GET api/v1/profile
+```
+
+| Authorization | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `Bearer Token`      | `string` | **Required**. |
+
 
 ## 👨‍🔬 Running Tests 
 
